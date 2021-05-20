@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a id="logo" href="#"><img id="logo-img" src="assets/logo.svg">Photography</a>
+            <button class="expand"><img class="expand-img" src="assets/expand_more.svg" alt=""></button>
+        </div>
+        
+        <ul class="menu">
+            <li><a href="#slider">Slider</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <div id="slider">
+            <button class="btn btn-left"><img src="assets/arrow_left.svg" alt=""></button>
+            <img class="image" src="assets/img1.jpg">
+            <button class="btn btn-right"><img src="assets/arrow_right.svg" alt=""></button>
+        </div>
+
+        <div id="gallery" class="container">
+            <h1>Gallery</h1>
+            <div class="gallery-container">
+                <div><img class="gallery-img" src="assets/img1.jpg" alt="img1" onclick="setImg(this)" style="opacity: 1;"></div>
+                <div><img class="gallery-img" src="assets/img2.jpg" alt="img2" onclick="setImg(this)"></div>
+                <div><img class="gallery-img" src="assets/img3.jpg" alt="img3" onclick="setImg(this)"></div>
+                <div><img class="gallery-img" src="assets/img4.jpg" alt="img4" onclick="setImg(this)"></div>
+                <div><img class="gallery-img" src="assets/img5.jpg" alt="img5" onclick="setImg(this)"></div>
+                <div><img class="gallery-img" src="assets/img6.jpg" alt="img6" onclick="setImg(this)"></div>
+                <div><img class="gallery-img" src="assets/img7.jpg" alt="img7" onclick="setImg(this)"></div>
+                <div><img class="gallery-img" src="assets/img8.jpg" alt="img8" onclick="setImg(this)"></div>
+                <div><img class="gallery-img" src="assets/img9.jpg" alt="img9" onclick="setImg(this)"></div>
+                <div><img class="gallery-img" src="assets/img10.jpeg" alt="img10" onclick="setImg(this)"></div>
+            </div>
+        </div>
+
+        <div id="about" class="container">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a turpis sem. Praesent sit amet magna eleifend dui semper fermentum ac accumsan diam. Fusce quis aliquam diam. Etiam in justo blandit, hendrerit magna nec, imperdiet ex. Mauris suscipit lorem vel nunc porttitor, ac pretium risus dictum. Vestibulum rutrum tortor at felis posuere, nec faucibus dolor aliquam. Donec vulputate sagittis egestas. Aenean at sapien nunc. Morbi consectetur, orci malesuada fringilla accumsan, nulla lectus tempor sem, non blandit orci ex eget mauris. Vivamus condimentum velit ut vulputate consectetur. Curabitur commodo blandit metus, at varius lacus ornare id. Phasellus quis euismod nulla, quis porttitor est.</p>
+            <p>Nam at ex nec nisl consequat malesuada. Vivamus id fringilla eros, egestas pellentesque purus. Nulla malesuada nisl eu urna malesuada, vitae condimentum lectus eleifend. Quisque luctus lobortis orci sit amet molestie. Ut lacinia convallis lorem sit amet pellentesque. Aliquam et nibh nunc. Etiam ornare pharetra nisl, in dignissim velit pretium ac. Proin cursus sollicitudin metus non fringilla. Nullam sit amet orci pharetra, pretium ex accumsan, iaculis urna. Sed molestie non sem et pharetra. Vestibulum at maximus diam. Ut nec venenatis urna. Sed et justo ut tellus placerat finibus aliquet id velit. Duis hendrerit egestas eros id semper. Praesent dapibus leo et massa tempor imperdiet commodo id massa.</p>
+            <p>Donec tempor nisi semper feugiat pretium. Praesent fringilla viverra purus, ac bibendum lectus pharetra a. Suspendisse in purus id ipsum commodo iaculis. Nam venenatis dolor in blandit malesuada. Vestibulum pulvinar libero erat, a mollis leo porttitor elementum. Aenean iaculis erat id tortor condimentum, et hendrerit neque posuere. Nulla eu rhoncus orci, eu venenatis sem. Duis quis nisl at ipsum tincidunt tristique et id neque. Integer imperdiet enim quam, non semper mi faucibus porta. Fusce sed accumsan elit. Nam rutrum augue sed erat tristique finibus. Curabitur vehicula tincidunt consectetur. Nullam sollicitudin felis enim, nec egestas diam fringilla vel. Suspendisse porttitor urna et euismod venenatis. In hac habitasse platea dictumst.</p>
+        </div>
+
+        <div id="contact" class="container">
+            <h1>Contact</h1>
+            <p>Make sure to contant us if you have any questions, suggestions or if you are interested in purchasing our images.<br>
+            You can call, send an e-mail or visit in person.</p>
+            <table>
+                <tr>
+                    <td>Phone number&nbsp;</td>
+                    <td>+385 91 020 3048</td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><a href="mailto: info@photography.com">info@photography.com</a></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>Vukovarska 31</td>
+                </tr>
+            </table>
+            <p>You can also contact us by submiting a form:</p>
+            <form action="/action.php" target="_parent">
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td><label for="email">E-mail </label></td>
+                            <td><input type="email" name="email" id="email" placeholder="example@email.com"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="name">Name (optional)&nbsp;</label></td>
+                            <td><input type="text" name="name" id="name"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message</label></td>
+                            <td><textarea name="message" id="message" cols="80" rows="5" placeholder="Here you can write us anything you are interested in"></textarea></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="SUBMIT">
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
