@@ -24,7 +24,7 @@ body {
 }
 
 a {
-    color: #154360  ;
+    color: #154360;
     text-decoration: none;
 }
 
@@ -65,9 +65,6 @@ fieldset {
 
 input, textarea {
     padding: 3px;
-}
-input[type=submit] {
-    
 }
 
 .navbar {
@@ -161,7 +158,11 @@ input[type=submit] {
 #message {
     resize: vertical;
 }
-
+@media only screen and (max-width: 376px) {
+    #logo-img {
+        display: none;
+    }
+}
 @media only screen and (max-width: 854px) {
     .menu {
         margin-top: -5px;
@@ -229,17 +230,14 @@ input[type=submit] {
     
     #slider {
         width: 100%;
-        /*height: 400px;*/
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        /*background-color: #28b463;*/
     }
     
     .image {
         width: 80%;
-        /*height: 100%;*/
     }
     
     .btn {
@@ -261,9 +259,6 @@ input[type=submit] {
         margin: 30px auto;
         padding: 20px;
         background-color: #FFF;
-    }
-
-    #gallery {
     }
 
     #message {
