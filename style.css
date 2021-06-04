@@ -158,6 +158,12 @@ input, textarea {
 #message {
     resize: vertical;
 }
+#submit {
+    background-color: #28b463;
+    color: #fff;
+    padding: 5px;
+}
+
 @media only screen and (max-width: 376px) {
     #logo-img {
         display: none;
