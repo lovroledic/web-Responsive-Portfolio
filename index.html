@@ -73,7 +73,7 @@
                 </tr>
             </table>
             <p>You can also contact us by submiting a form:</p>
-            <form action="/action.php" target="_parent">
+            <form>
                 <fieldset>
                     <table>
                         <tr>
@@ -89,7 +89,8 @@
                             <td><textarea name="message" id="message" cols="" rows="5" placeholder="Here you can write us anything you are interested in"></textarea></td>
                         </tr>
                     </table>
-                    <input type="submit" value="SUBMIT">
+                    <button id="submit" type="button" onclick="submit()">SUBMIT</button>
+                    <p id="submited"></p>
                 </fieldset>
             </form>
         </div>
