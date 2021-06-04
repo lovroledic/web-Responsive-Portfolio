@@ -56,3 +56,17 @@ function setImg(gallery_img) {
     i = x;
     gallery_imgs[i].style.opacity = "1";
 }
+
+const email = document.getElementById("email");
+const name = document.getElementById("name");
+const message = document.getElementById("message");
+const submit = document.getElementById("submit");
+const submited = document.getElementById("submited");
+
+submit.onclick = function() {
+    if (email.value.replace(/\s/g, "X") === "" || message.value.replace(/\s/g, "X") === "") {
+        submited.innerHTML = "Not enough information.";
+    } else {
+        submited.innerHTML = "Thank you, " + (name.value.replace(/\s/g, "X") === "" ? "user" : name.value) + ". Your message has been sent.";
+    }
+}
